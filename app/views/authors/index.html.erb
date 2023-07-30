@@ -1,0 +1,15 @@
+<h1>Articles</h1>
+
+<ul>
+  <% @authors.each do |author| %>
+    <li>
+      <%= author.name %>
+      <%= author.qualification %> 
+
+      <%= link_to "edit",edit_author_path(author) %> 
+      <%= link_to "show",author_path(author) %> 
+      <%= link_to "create books",new_book_path(id: author) %> 
+
+    </li>
+  <% end %>
+</ul>

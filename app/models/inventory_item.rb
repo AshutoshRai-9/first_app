@@ -1,0 +1,3 @@
+class InventoryItem < ApplicationRecord
+	
+end
